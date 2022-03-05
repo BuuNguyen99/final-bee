@@ -1,0 +1,60 @@
+application:
+  oauth2:
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
+server:
+  error:
+    include-message: always
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hairstyle-system
+    username: newuser
+    password: password
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: 'nguyenbuu3599@gmail.com'
+    password: 'oeqquxkqwmlyectt'
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+app:
+  auth:
+    secretKey: 04ca023b39512e46d0c2cf4b48d5aac61d34302994c87ed4eff225dcf3b0a218739f3897051a057f9b846a69ea2927a587044164b7bae5e1306219d50b588cb1
+    tokenPrefix: 'Bearer '
+    jwtAccessTokenExpirationMs: 86400
+    jwtRefreshTokenExpirationMs: 86400000
+  cors:
+    allowedOrigins: http://localhost:3000 # Comma separated list of allowed origins
+
+service:
+  mail:
+    name: 'E-commerce Technology'
+firebase:
+  bucketName: 'hairstyle-11152021.appspot.com'
+  projectID: 'hairstyle-11152021'
+  type: 'service_account'
+  privateKeyID: 7de9f0c03361bc883ae3b1701d191ed89d7838e7
+  privateKey: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/BRTZNkH3NSFj\ngouFADo/0+DQwW8VaPo6KkRrvlXEZOrFyR8Ll3B91THXQssA1gujYIaSg47u5W6t\n5Mu+kXjs1W9/UkbM8z7lj2tCAFSqmrQNj+b99esU0F3aKCp1NP4SiHh24aOQj8El\nVUyb9sQlCTcK+3wimxobbAT5yEijerK9al1oSF87p5GQCM1762Fz7dsSPTOoCKVo\nqk+TIFC2b/KfME1iBHVd/BJaABAs0Xv7+66suCJX9OBZknCnT8LsIzrQma0lHMOs\n6BzQxNnBTSGwQRNwrt9bZu7GlSVUvMBdXhOPRPP06nm9mW1iJmRGHg0LB/b6TsF9\nIBpOMwaTAgMBAAECggEACZNCd3Lx/TzYvB6+n1T4Foaomyj0cwvMmJ7Rct8weG71\n780u9QtLKcZGldD00R6+/ZpolIPrZcvyxN0WXiqiTP4+n7tq7iTMBIDbHQyxhyMd\nyceVX39KIJnN9+dnMsc3FzcSZs8qaPmJHTXN6HbcX9464p428PB6b2Eg92O+nxHW\nFxXVfynF/8SJ98sB8d3Bu3XPbImG7jJTtbKwTXsQsqccrHCNINgCEzOvYZEg26Ch\n4O0BAvs1P5J/FyGoCZ538Fv74wXvZ9EmXwSNvEpukDZXG+d/QBfiIF1WOHDwsKVB\nBWzkjr4PDk3oZR/0i4rSYsjgkMFeusE4RoMA1xMb/QKBgQDsklIfT0cK5MRqJIDU\n42Ta2iyOexCMrGHDzKBHXD2HLWJVIZe2Q8jMml12q8BWLqb2piFUqr2mH10ztJNw\nhLgHvYuhdAnIZkQOvE45jc80bw8GVNUch0rc4iETjuQad5itjyUsks0BV3xKfABH\nGwZDoAjN27wxMzCi6FB6qSlmJQKBgQDOtRTl+f7ctO2XN9DuJor/tOwGUClhxGvV\naYMXEnPpGrmIluQ5p2yXElFMjZjhOL3C+Gcd6jhJ5eGCdq0CWPi7SU0EhbU5xOT6\nfR7f75Qh+otbxRgaojvY/2znU4zz1HuE+qw78OaDtf4weXudhJFLcqTw7HdpjjxQ\nPbhPLhMQVwKBgQCq/WOAH+QAerOA6Jt5xFYcXT+BSHAAzYPoatmaWpBaSTJex+YJ\nJltXj2doo+FkKVoiwpcqxDJJhTfvbGB5HmSJq7Xl36JGh6w/XlnH/bi7dF5OvDhA\n44T3vDYeFdTHUJQ5NlKvMfgdNSewCoqE2oKflGdoq58NjKtlxDaPQf+bRQKBgCrf\ngiMlFAiA+lqH+Cy9D81zoBS7IaomjFsqVEc/y4zIvzymV1Xh9PLsmLIxGEl2dF1x\nGiopP12McZaWuNGo1IY78N6EQQ9nWDrgIrw9u9LEXY0+Nv6nMZSTfeoI+U5Ffw0Y\n1Qplr9oXsE4rlEkaiuxELhPOaAIbv0TBWG4L12ZnAoGANWi7hfpnc58DvWQPmn4K\nj+7l+J1TeCY6ZfI/wpYbnWhHwcviG4ZYELF2VgrnVo8gGZ3Kt/tQ5mMcAxb3yYo8\nGPKhW6j+40hWzXeGHLs7tUoK+NzfhE4W1A+QArDjjE2O7idTGhq5KbM6llfswMcR\n2ujHvkJ2o1nNrIadmYXuf+E=\n-----END PRIVATE KEY-----\n"
+  clientEmail: 'firebase-adminsdk-0oioi@hairstyle-11152021.iam.gserviceaccount.com'
+  clientID: 112198658277972391610
+  authURI: 'https://accounts.google.com/o/oauth2/auth'
+  tokenURI: 'https://oauth2.googleapis.com/token'
+  authProviderX509CertURL: 'https://www.googleapis.com/oauth2/v1/certs'
+  clientX509CertURL: 'https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-0oioi%40hairstyle-11152021.iam.gserviceaccount.com'
+

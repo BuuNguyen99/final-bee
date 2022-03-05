@@ -1,0 +1,72 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "com.example.hairstyle.config.AppProperties",
+      "sourceType": "com.example.hairstyle.config.AppProperties"
+    },
+    {
+      "name": "firebase",
+      "type": "com.example.hairstyle.config.FirebaseConfig",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "firebase.auth-provider-x509-cert-u-r-l",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.auth-u-r-i",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.client-email",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.client-i-d",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.client-x509-cert-u-r-l",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.private-key",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.private-key-i-d",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.project-i-d",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.token-u-r-i",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    },
+    {
+      "name": "firebase.type",
+      "type": "java.lang.String",
+      "sourceType": "com.example.hairstyle.config.FirebaseConfig"
+    }
+  ],
+  "hints": []
+}
